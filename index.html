@@ -1,0 +1,237 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple One Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="main.js"></script>
+    <style>
+        /*importing fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora&family=Quicksand:wght@500&display=swap');
+        *{
+            margin: 0;
+            
+        }
+
+        body{
+            overflow-x: hidden;/*hide the scrool verticall*/
+
+        }
+
+        .blue-background {
+            background: #002157;
+            width: 100%;
+            height: 50vh;
+        }
+
+        .blue-background h1 {
+            color: #fff;
+            font-size: 70px;
+            text-align: center;
+            padding: 52px;
+            font-family: 'Lora', serif;
+        }
+
+   .blue-background img {
+    position: relative;
+    left: 556px;
+    width: 18%;
+    border: white solid 5px;
+    border-radius: 700px;
+    height: 70%;
+    top: -26px;
+}
+
+        .text {
+            margin-top: 200px;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        .education {
+            font-size: 50px;
+            font-family: 'Lora', serif;
+            text-align: center;
+        }
+
+        .logos img {
+    width: 220px;
+    left: 109px;
+    position: relative;
+}
+        h3.school{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            font-size: 15px;
+        }
+        h4.year{
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-size: 10px;
+        }
+       h3 .contact {
+        font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            font-size: 15px;
+            color:#fff;
+       }
+       
+       form.form {
+    text-align: center;
+    position: relative;
+    bottom: 39px;
+}
+input[type="text"] {
+    border: none;
+    background: #fff;
+    width: 300px;
+    padding: 14px;
+    border-radius: 50px;
+    margin: 12px;
+}
+input[type="Submit"] {
+    border: none;
+    background: #000;
+    width: 300px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    color:#fff;
+}
+/*Media query for small devices */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .blue-background img {
+    left: 92px;
+    width: 55%;
+    top: -16px;
+    height: 60%;
+}
+    .text{
+        margin-top: 200px!important;
+        padding:12px;
+    }
+    .logos img {
+  
+    left: 72px;
+    
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .blue-background img {
+    position: relative;
+    left: 226px;
+    width: 41%;
+    border: white solid 5px;
+    border-radius: 700px;
+    height: 60%;
+    top: 7px;
+}
+.blue-background h1 {
+    color: #fff;
+    font-size: 96px;
+    text-align: center;
+    padding: 52px;
+    font-family: 'Lora', serif;
+}
+.logos img {
+    left: 3px;
+}
+.text {
+    padding: 12px;
+}
+  }
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .blue-background img {
+    position: relative;
+    left: 303px;
+    width: 41%;
+    border: white solid 5px;
+    border-radius: 700px;
+    height: 60%;
+    top: -22px;
+}
+.blue-background h1 {
+    color: #fff;
+    font-size: 142px;
+}
+.logos img {
+    left: 44px;
+}
+.text {
+    padding: 12px;
+}
+  }
+    </style>
+</head>
+
+<body>
+    <!--Section for background with a title and an image-->
+    <section class="row">
+        <div class="col-md-12 col-xs-12 blue-background">
+            <h1>Bandile Dlamini</h1>
+            <img src="images\bandile.jpg" alt="img">
+        </div>
+    </section>
+    <section class="text">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+            aliqua.The first word, “Lorem,” isn't even a word; instead it's a piece of the word “dolorem,” meaning
+            pain,
+            suffering, or sorrow.</p>
+
+    </section>
+
+    <section id="education">
+        <h1 class="education">Education</h1>
+        <div class=" row logos">
+            <div class=" col-md-4">
+                <img src="images\logo1.png" alt="Greenstoneville High School">
+                <h3 class="school">Greenstoneville High School</h3>
+                <h4 class="year">2009</h4>
+            </div>
+            <div class=" col-md-4">
+                <img src="images\logo2.png" alt="Greenstoneville High School">
+                <h3 class="school">Walter Sisulu University</h3>
+                <h4 class="year">2012</h4>
+            </div>
+            <div class=" col-md-4">
+                <img src="images\logo3.png" alt="Greenstoneville High School">
+                <h3 class="school">University of Pretoria</h3>
+                <h4 class="year">2015</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-md-12 col-xs-12 blue-background">
+
+            <h1 class="contact">Contact</h1>
+            <form class="form">
+                <input type="text" placeholder="Enter your email"><br>
+                <input type="Submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
